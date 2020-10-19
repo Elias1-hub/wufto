@@ -80,6 +80,11 @@ if($stmt= $conn->prepare("SELECT id_valor,fecha, USDT_BTC, USDT_ETH, BTC_ETH FRO
 						<?php }   ?>
 							</td>
 							<td></td>
+							<?php 
+							if ($pages<=0){
+							?><td></td><?php
+							} ?>
+							
 						</div>
 						
 					</thead>
